@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-dark" style="height:100px; background-color:rgb(47,69,117)">
+            <h1>
+                <a href="https://fr-fr.facebook.com/" class="text-white">facebook</a>
+            </h1>
+            <form action="" method="get">
+                <table>
+                    <tr>
+                        <td><input type="text" name="mail" id="mail" placeholder=" Email or Phone" /></td>
+                        <td><input type="text" name="password" id="password" placeholder=" Password" /></td>
+                        <td><button type="button" class="btn btn-primary">Login</button></td>
+                    </tr>
+
+                </table>
+            </form>
+            </span>
+        </nav>
+
+    </header>
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-md-6" >
+                <img src="facebook_connect.jpg" style="width: 100%;height:400px; margin-top: 50px;" />
+            </div>
+
+            <div class class="col-md-6">
+
+                <h1>Sign Up</h1>
+                <p>It's free and always will be.</p>
+                <form id="testForm" action="traitement.php" method="POST">
+                    <input type="text" name="prenom" id="prenom" placeholder=" First Name" />
+                    <input type="text" name="nom" id="prenom" placeholder="Last Name" />
+                    <br><br>
+                    <input type="text" name="Numero" id="" placeholder="Mobile number or email" />
+
+                    <br><br>
+                    <input type="password" name="password_confirm" id="password" placeholder="New password" />
+
+
+                    <br><br>
+
+                    <p>Birthday</p>
+                    <select name="liste" id="liste">
+                        <option>select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="mois" id="mois">
+                        <option value="">select</option>
+                        <option value="">Janvier</option>
+                        <option value="">Fevrier</option>
+                        <option value="">Mars</option>
+                        <option value="">Avril</option>
+                        <option value="">Mai</option>
+                        <option value="">Juin</option>
+                        <option value="">Juillet</option>
+                        <option value="">Aout</option>
+                        <option value="">Septembre</option>
+                        <option value="">Octobre</option>
+                        <option value="">Novembre</option>
+                        <option value="">Decembre</option>
+                    </select>
+                    <select name="Année" id="Année">
+                        <option value="">select</option>
+                        <option value="">2000</option>
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                    </select>
+                    <p>Gender</p>
+                    <div class="row">
+
+                        <div class="">
+                            &emsp; <input class="form-check-input" type="radio" name="genre" id="homme" value="h">
+                            <label class="form-check-label" for="homme">
+                                Female
+                            </label>&emsp;&emsp;
+                        </div>
+
+
+                        <div class="">
+                            &emsp; <input class="form-check-input" type="radio" name="genre" id="femme" value="f">
+                            <label class="form-check-label" for="femme">
+                                Male
+                            </label>&emsp;&emsp;
+                        </div>
+
+
+                        <div class="">
+                            &emsp;<input class="form-check-input" type="radio" name="genre" id="personnalisé" value="h">
+                            <label class="form-check-label" for="personnalisé">
+                                Custom
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <br><br>
+
+                    <button type="button" class="btn btn-success" data-dismiss="modal">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
